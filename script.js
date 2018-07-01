@@ -15,7 +15,7 @@
         .catch( err => c(`Registro de Service Worker fallido`, err) )
     })
   }
-
+  /*
   //Activar Notificaciones
   if( w.Notification && Notification.permission !== 'denied' ) {
     Notification.requestPermission(status => {
@@ -57,6 +57,7 @@
       })
     })
   }
+  */
 })(document, window, navigator, console.log);
 
 //Detección del Estado de la Conexión

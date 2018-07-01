@@ -1,11 +1,8 @@
 const CACHE_NAME = 'ingeniapwa-v1',
   urlsToCache = [
     './',
-    './?utm=homescreen',
-    './index.html',
-    './index.html?utm=homescreen',
+    'https://fonts.googleapis.com/css?family=Roboto:400,700,800',
     './script.js',
-    './favicon.ico',
     './images/icon_192x192.png'
   ]
 
