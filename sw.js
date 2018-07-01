@@ -60,6 +60,7 @@ self.addEventListener('fetch', e => {
     )
 })
 
+/*
 self.addEventListener('push', e => {
   console.log('Evento: Push')
 
@@ -108,7 +109,7 @@ self.addEventListener('sync', e => {
     )
   }
 })
-
+*/
 /* self.addEventListener('message' e => {
   console.log('Desde la Sincronización de Fondo: ', e.data)
   fetchGitHubUser( localStorage.getItem('github'), true )

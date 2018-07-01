@@ -59,7 +59,7 @@
   }
   */
 })(document, window, navigator, console.log);
-
+/*
 //Detección del Estado de la Conexión
 ((d, w, n, c) => {
   const header = d.querySelector('.Header'),
@@ -88,3 +88,4 @@
     w.addEventListener('offline', networkStatus)
   })
 })(document, window, navigator, console.log);
+*/
