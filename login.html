@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingenia Login </title>
+<!-- Declaraciópn de manifest -->
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#4e89df">
+<!-- Detección de Icono de PWA -->
+<link rel="icon" type="image/png" sizes="16x16" href="./images/icon_16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/icon_32x32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="./images/icon_64x64.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./images/icon_96x96.png">
+<link rel="icon" type="image/png" sizes="128x128" href="./images/icon_128x128.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./images/icon_192x192.png">
+<link rel="icon" type="image/png" sizes="256x256" href="./images/icon_256x256.png">
+<link rel="icon" type="image/png" sizes="384x384" href="./images/icon_384x384.png">
+<link rel="icon" type="image/png" sizes="512x512" href="./images/icon_512x512.png">
+<link rel="icon" type="image/png" sizes="1024x1024" href="./images/icon_1024x1024.png">
+<!-- Metatags iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-title" content="PWA Demo">
+<link rel="apple-touch-icon" sizes="192x192" href="./images/icon_192x192.png">
+<!-- Metatags Windows -->
+<meta name="msapplication-TileColor" content="#4e89df">
+<meta name="msapplication-TileImage" content="./images/icon_192x192.png">
+<!-- Otros Metatags -->
+<meta property="og:title" content="PWA Demo">
+<meta property="og:locale" content="es_MX">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./images/icon_128x128.png">
+<meta property="og:site_name" content="INGENIA">
+<meta property="og:url" content="https://www.ingeniaweb.com.mx">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,800" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Khula:400,700,800" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="vendors/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="build/css/custom.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<style type="text/css">
+	h1{font-family: 'Roboto';letter-spacing:-0.02px;}
+	body:before {content: "";position: fixed;left: 0;right: 0;top:0px;z-index: -1;display: block;background-image: url('images/bg.png');width: 100%;height:100%;-webkit-filter: blur(5px);-moz-filter: blur(5px);-o-filter: blur(5px);-ms-filter: blur(5px);filter: blur(5px);opacity:0.6;}
+	strong{font-weight:800;}
+	#msg01{animation-duration: 4s;animation-delay: 7s;animation-iteration-count: infinite;}
+	.login-left{background: #4e89df;padding: 20px;min-height: 450px;border-radius: 8px 0 0 8px;}
+	.login-right{background: #e1e1e1;padding: 20px;min-height: 450px;border-radius: 0 8px 8px 0;}
+	.footer-right{text-align: center;background: #73879c;color: #f3f3f3;padding: 15px;border-radius: 0 0 6px 0;bottom: 0;left:0;position: absolute;width: 100%;}
+	.footer-left{bottom: 0;left:0;position: absolute;width: 100%;}
+</style>
+</head>
+<body class="login">
+
+	<a class="hiddenanchor" id="signup"></a>
+	<a class="hiddenanchor" id="signin"></a>
+	<!-- Wrapper -->
+	<div class="login_wrapper">
+	<div class="col-sm-12 animated flipInX">
+
+		<div class="col-sm-6 col-md-5 login-left">
+			<h1 class="lblanco"><strong>Ingenia Login</strong></h1>
+			<p class="lblanco">Dise&ntilde;amos el mundo para ponerlo en sus manos</p><br/><br/><br/>
+			<p id="msg01" class="animated bounce lblanco text-center footer-left"><i class="material-icons md-24">vpn_key</i><br/>Por favor ingrese sus credenciales<br/>para iniciar sesi&oacute;n en el sistema</p>
+			<!--
+			<h1 class="lblanco"><strong>FamiliaDGRH</strong></h1>
+			<p class="lblanco">Comprometidos con nuestra misi&oacute;n, visi&oacute;n, valores y politica de calidad</p>
+			-->
+		</div>
+		<div class="col-sm-6 col-md-7 login-right">
+			<form style="padding: 0 40px 0 40px;">
+				<h3><i class="material-icons md-24">recent_actors</i>&nbsp;<strong>Bienvenido</strong></h3>
+				<div><input type="text" class="form-control" placeholder="Usuario" required="" /></div>
+				<div><input type="password" class="form-control" placeholder="Clave de acceso" required="" /></div>
+				<div class="text-center"><br/><a class="btn btn-default submit" href="index.html">Ingrese</a><br/><a class="reset_pass" href="#">Perdi&oacute; su clave de acceso?</a></div>
+				<div class="clearfix"></div><br/><br/>
+				<div class="separator">
+				<p class="change_link text-center"><i class="material-icons md-18">assistant</i> Nuevo en la instituci&oacute;n? <a href="#signup" class="to_register"> Solicite su acceso </a></p><div class="clearfix"></div><br /><br/>
+				</div>
+			</form>
+			<div class="footer-right"><!--<h4>Direcci&oacute;n General de Recursos Humanos</h4>--><p>©2018 All Rights Reserved / Ingenia Web Estudio</p></div>
+		</div>
+
+	</div>
+	</div>
+
+<script src="vendors/jquery/dist/jquery.min.js"></script>
+<script>
+$(function(){
+	var animacion = 'animated shake';
+	var finaliza = ' animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd';
+	$('a.button').on('click',function(){
+		$('input[name=elnombre]').addClass(animacion).one(finaliza,function(){
+			$(this).revoveClass(animacion);
+		});
+	});
+});
+</script>
+<script src="script.js"></script>
+</body>
+</html>
