@@ -1,9 +1,9 @@
-const CACHE_NAME = 'pwa-demo-edteam-cache-v1',
+const CACHE_NAME = 'ingeniapwa-v1',
   urlsToCache = [
     './',
     './?utm=homescreen',
-    './indexo.html',
-    './indexo.html?utm=homescreen',
+    './index.html',
+    './index.html?utm=homescreen',
     './script.js',
     './favicon.ico',
     './images/icon_192x192.png'
