@@ -1,12 +1,12 @@
 {
   "name": "Progressive Web App Ingenia",
-  "short_name": "PWA Demo",
+  "short_name": "PWA Ingenia",
   "description": "Demo de aplicación web progresiva.",
   "background_color": "#4e89df",
   "theme_color": "#4e89df",
   "orientation": "portrait",
-  "display": "standalone",
-  "start_url": "./?utm=homescreen",
+  "display": "fullscreen",
+  "start_url": "./?utm_source=web_app_manifest",
   "scope": "./",
   "lang": "es-MX",
   "icons": [
